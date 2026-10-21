@@ -1,21 +1,27 @@
-MIT License
+# Llicència d'Ús No Comercial i Atribució del Projecte 3 de Realitat Virtual.
 
-Copyright (c) 2026 Núria
+Copyright (c) 2026 Núria Prat Castells
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Per la present es concedeix permís, de manera gratuïta, a qualsevol persona que obtingui
+una còpia d'aquest programari i dels fitxers de documentació associats (el "Programari"),
+per utilitzar, copiar, modificar, fusionar, publicar i distribuir còpies del Programari,
+subjecte a les condicions següents:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. **Atribució (Menció a l'autor):** En totes les còpies o parts substancials del Programari
+s'ha d'incloure l'avís de dret d'autor anterior i aquest avís de permís. S'ha de reconèixer
+clarament l'autoria original del projecte i incloure un enllaç al repositori original.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. **Ús No Comercial:** El Programari i les seves obres derivades NO es poden utilitzar,
+vendre, llogar ni redistribuir amb fins comercials ni per a l'obtenció de beneficis econòmics
+directes o indirectes sense el consentiment previ per escrit de l'autor original.
+
+Tots els elements que componen aquest projecte (escenaris, vídeos, captures de pantalla,
+personatges) són de creació original de Núria Prat Castells. Tots ells han sigut creats
+mitjançant l'eina Blender. Aquests elements són propietat de Núria Prat Castells i estan
+disponibles pel seu ús en el context d'aquest projecte educatiu per l'assignatura de
+Realitat Virtual de la Universitat Oberta de Catalunya.
+
+Aquest projecte és un treball acadèmic i no es pot utilitzar amb fins comercials o
+distribuir-se sense el permís explícit de l'autora.
+
+EL PROGRAMARI S'OFEREIX "TAL COM ÉS", SENSE GARANTIA DE CAP MENA, EXPRESSA O IMPLÍCITA, INCLOENT PERÒ NO LIMITANT-SE A GARANTIES DE COMERCIABILITAT, ADEQUACIÓ PER A UN PROPÒSIT PARTICULAR I NO INFRACCIÓ. EN CAP CAS ELS AUTORS O TITULARS DELS DRETS D'AUTOR SERAN RESPONSABLES DE CAP RECLAMACIÓ, DANYS O ALTRA RESPONSABILITAT, JA SIGUI EN UNA ACCIÓ DE CONTRACTE, TORT O ALTRA MANERA, QUE SORGEIXI DE, FORA DE O EN CONNEXIÓ AMB EL PROGRAMARI O L'ÚS O ALTRES TRACTES EN EL PROGRAMARI.
