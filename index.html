@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sky</title>
+  <meta name="description" content="Sky">
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  </script>
+</head>
+
+<body> <!-- He deixat el fons en blanc perquè així pot mig representar més la lluminària que vindria de fora. -->
+  <a-scene>
+    <a-assets>
+      <img id="interior" src="recursos/escena 1 16bits 0 compres.png">
+      <img id="imgPortal" src="recursos/escena 2.png">
+      <!-- L'arxiu blender del personatge i de tot l'escenari és propi, creat per la PR de l'assignatura Gràfics 3D de la UOC. -->
+      <a-asset-item id="personatge" src="recursos/personatge.obj"></a-asset-item>
+      <a-asset-item id="personatge-mtl" src="recursos/personatge.mtl"></a-asset-item>
+    </a-assets>
+
+    <a-sky id="escena1" radius="10" src="#interior"></a-sky>
+
+    <!-- PERSONATGE -->
+     <!-- S'ha utilitzat la IA Gemini per demanar-li com fer que el personatge estigués ben amunt i passant el cursor per l'espai obert en caigués el personatge
+      m'ha recomanat posar el personatge, que no acabava de tenir el punt cèntric al centre, en una caixa i que fos aquesta que activés el moviment,
+      ja que amb el personatge sol no se m'activava.
+      He deixat els comentaris que m'ha fet. Ell només m'ha creat la caixa, la posició i animació del personatge l'he fet jo. -->
+    <!-- CONTENIDOR DE CAIGUDA (Acomoda la posició i captura els esdeveniments del cursor) -->
+    <a-entity id="contenidor-personatge" position="-0.5 15 -11" geometry="primitive: box; width: 6; height: 6; depth: 6" material="visible: false">
+      <!-- MODEL 3D DINS DEL CONTENIDOR -->
+      <a-entity obj-model="obj: #personatge; mtl: #personatge-mtl" position="0 0 0" rotation="25 0 0" scale="7 7 7"></a-entity>
+      <a-animation attribute="position" direction="alternate" repeat="1" begin="mouseleave" dur="1200" to="-0.5 -20 -11"></a-animation>
+      <!-- L'animació simula el moment en què cau el personatge pel forat. Torna enrere perquè no es quedi parat davant nostre tota l'estona
+       i perquè no es vagi repetint sense voler. Així també no es veu tant el defecte de la cara que no he sabut corregir a Blender. -->
+    </a-entity>
+
+    <a-text value="Casa Minish" color="#ffffff" position="-5.5 2 -0" rotation="0 90 0" scale="2 2 2"
+      text="align:center"></a-text>
+    <a-text value="¿Pero que es eso de arriba" color="#ffffff" position="0 1 -3" scale="0.5 0.5 0.5"
+      text="align:center"></a-text>
+      <a-text value="que viene?" color="#ffffff" position="0 0.85 -3" scale="0.5 0.5 0.5"
+      text="align:center"></a-text>
+
+    <!-- PORTAL -->
+      <a-link href="exterior.html" title="Sal a fuera" image="#imgPortal" peekMode="false"  rotation="0 90 0" position="7 2 0"> </a-link>
+
+    <a-camera rotation="0 90 0">
+      <a-cursor color="#0000FF"></a-cursor>
+    </a-camera>
+  </a-scene>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Videosphere</title>
+    <meta name="description" content="Videosphere">
+    <script src="https://aframe.io/releases/0.6.1/aframe.min.js">
+    </script>
+  </head>
+  <body>
+    <a-scene >
+      <a-assets>
+        <video id="extVideo" autoplay loop="false" src="recursos/escena 2.mp4">
+            <!-- Vídeo creat, directament, amb el programa Blender.
+             Vídeo de 3 segons amb 12fps.
+             L'escena 2, que és la part externa de l'escena 1, és de creació propia, creat per la PR de l'assignatura Gràfics 3D de la UOC.
+             Observem que dins del trons hi ha bolets. Per fer la escena 1 els vaig treure per tenir visió de l'interior. -->
+        <img id="imgPortal" src="recursos/escena 1 portal.png">
+      </a-assets>
+
+      <a-videosphere src="#extVideo"></a-videosphere>
+
+      <!-- PORTAL -->
+      <a-link href="index.html" title="Vuelve dentro" image="#imgPortal" peekMode="false"  rotation="-45 300 0" position="-3 5.5 3.5"> </a-link>
+      
+      <a-camera rotation="0 90 0">
+        <a-cursor color="#0000FF"></a-cursor>
+      </a-camera>
+    </a-scene>
+  </body>
+</html>
